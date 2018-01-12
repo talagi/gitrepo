@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T12:20:56+01:00
+
+====== Home ======
+Created piątek 12 styczeń 2018
+
+$ - wszystko sie nim zaczyna
+można stosować " lub '
+
+$("selektor elementu").akcja
+
+W iQuery pierwszym sposobem selekcji jest selekcja elementu z identyfikatorem (#)
+$('#login')
+
+Kolejność nawiasów:
+$("selektor elementu").akcja(function(){
+działania;
+});
+
+===== Dołączenie jQuery do strony: =====
+-dołączane są za pomocą CDN (usługa działająca w chmurze)
+
+
+
+Przykładowe metody:
+.hide()- ukrywa
+.show() - pokazuje
+.toggle() - łączy hide i show
+.fadeIn()
+ .fadeOut()
