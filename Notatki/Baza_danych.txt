@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T09:55:40+01:00
+
+====== Baza danych ======
+
+Projektowanie baz danych:
+tabela
+pola,typ danych, czyli liczby i tekst
+rekord = zbiór pól w obrębie jednej tabeli
+
+język SQL - strukturalny język zapytań stosowany w bazach danych
+
+Cechy charakterystyczne:
+baza danych powinna zajmowac minimum pamięci
+baza danych powinna być wydajna
+baza danych powinna być spójna
+
+Programy:
+Microsoft Access (.accdb)
+[[LibreOffice]] Base (.odb)
+[[SQLiteStudio]] (.db, .sqlite)
+
+
+Relacyjna baza danych powstaje przez przeanalizowanie danych
+składa się z wielu tabel połączonych relacjami
+
+Systemy/Silniki baz danych
+[[MySQL]]
+[[MariaDB]]
+[[PostgreSQL]]
+Oracle
+SQLite
+
+Typy danych
+
+Liczbowe
+integer - liczby całkowite
+Floot lub real, decimal - liczby zmiennoprzecinkowe
+
+Tekstowe
+text[20], warchar[20], string
+
+Data i czas
+Date - data, np. w formacie IOS, np. 2015-01-16
+[[DateTime]] - data i czas
