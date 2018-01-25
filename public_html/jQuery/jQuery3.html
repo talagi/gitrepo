@@ -33,9 +33,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#akapit1").mouseover(function(){
-            $("#akapit1").text();
-            $("input[name='kod1']").val();
+        $(document).ready(function(){
+          $('kod1').on({
+            static akapit1
+            mouseover: function(){
+              $('akapit1')  }
+    });
+        $('#kod2').mouseover(function() {
+            $('#akapit2').text($(this).val());
+    });
+        $('#kod3').mouseover(function() {
+            $('#akapit3').text($(this).val());
+          });
         });
 
 
