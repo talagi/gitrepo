@@ -18,8 +18,8 @@ baza danych powinna być spójna
 
 Programy:
 Microsoft Access (.accdb)
-[[LibreOffice]] Base (.odb)
-[[SQLiteStudio]] (.db, .sqlite)
+LibreOffice Base (.odb)
+SQLiteStudio (.db, .sqlite)
 
 Relacyjne baza danych
 składa się z wielu tabel połączonych relacjami
@@ -32,9 +32,9 @@ relacja jeden-do-wielu
 
 
 Systemy/Silniki baz danych
-[[MySQL]]
-[[MariaDB]]
-[[PostgreSQL]]
+MySQL
+MariaDB
+PostgreSQL
 Oracle
 SQLite
 
@@ -49,6 +49,6 @@ text[20], warchar[20], string
 
 Data i czas
 Date - data, np. w formacie IOS, np. 2015-01-16
-[[DateTime]] - data i czas
+DateTime - data i czas
 
 

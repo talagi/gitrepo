@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-02T12:16:08+01:00
+
+====== Klient-Serwer ======
+Created piątek 02 luty 2018
+
+Serwer - "komputer" udostępniający zasoby
+Jakie zasoby można udostępniać?
+Udostępnia USŁUGI (ang.services, lista: [[/etc/services]])
+
+1.DNS - Domain Name System, port 53, zamiana nazw hostów na adresy IP, polecenie: ping
+2. HTTP - [[HyberText]] Transfer Protocol, komunikacja w zakresie stron WWW, port 80
+3. FTP - File Transfer Protocol, porty 20,21
+4. SSH - Secure Shell, port 22
+
+Klient - "komputer" korzystający z usług udostępnianych przez serwer, np. przeglądarka WWW albo klient chat
+
+Protokół - "język" porozumiewania się klienta z serwerem, protokoły definiowane są w dokumentach RFC
+
+Adres IP, np. 221.34.2.10
+
+Port - liczba naturalna identyfikująca usługę na serwerze, well known ports 0-1-24, zob./etc/services
+
+LOKALNY SERWER HTTP
+python -m [[SimpleHTTPServer]]
+python3 -m http.server
+
+php -S [[localhost:8000]]
+
+Domyślna nazwa sewera:p[[ort]]
+[[localhist:8000]]
+127.0.0.1:8000
+
+Domyślny zasób: index.html, index.php, index
+
+RRZĄDANIA GET:
+URI => URL
+http://lo1.sandomierz.pl/szukaj?words=parnas&search=
+
+
+http:// - protokół
+[[ttp://lo1.sandomierz.pl/szukaj?words=parnas&search=|lo1.sandomierz.pl]] - (pełnodomenowa) nazwa serwera
+[[ttp://lo1.sandomierz.pl/szukaj?words=parnas&search=|/szukaj]] - zasób na serwerze
+? - początek listy parametrów
+[[ttp://lo1.sandomierz.pl/szukaj?words=parnas&search=|words=parnas]] - parametr w formacie nazwa = wartość
+& -  znak służący rozdzielaniu parametru
+search=
+
+RZĄDANIA POST:
+HTTPS://  = HTTP + SSL
+
