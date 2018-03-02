@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:11:11+01:00
+
+====== Bootstrap ======
+Created piątek 02 marzec 2018
+
+twórcy bootstrapa podzielili je na pięć grup:
+-Extra small -xs
+-small -sm 
+-medium -md
+-large -lg
+-extra large -xl
+
+spacing
+m-classa margin
+p- classa padding
+
+t-top
+b-bottom
+l-left
+r-right
+x- left and right (*-right...)
+y- top and bottom
