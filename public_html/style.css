@@ -1,0 +1,11 @@
+body {
+  background-image: url('miasto.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/*style użytkownika*/
+.mark, mark {
+  background-color: rgba(252, 21, 250, 0.29);
+}

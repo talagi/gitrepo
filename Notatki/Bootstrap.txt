@@ -22,3 +22,9 @@ l-left
 r-right
 x- left and right (*-right...)
 y- top and bottom
+
+
+
+pseudoelementy css
+::before
+::after
