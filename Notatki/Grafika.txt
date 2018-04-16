@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:54:02+01:00
+
+====== Grafika ======
+Created poniedziałek 19 marzec 2018
+
+0x - dalej nastepuje kod szestnastkowy
+0xFFFFFF-kolor biały
+1 składowa koloru to 1 B
+4 B kanał alfa, kanał pezroczystości
+
+RGB jest odwrotnością CMYK
+CMY mogą mieć wartości od 0-100
+
+HSB
+H-oznacza barwę(Hue),wyrażona w stopniach od 0-360
+S-oznacza nasycenie, wyrażona w procentach od 0-100%
+B/V- oznacza jasność/wartość (Brightness),wyrażana  w procentach od 0-100%
+
+przestrzeń kolorów
+
+pierwszy rodzaj grafiki to grafika rastrowa(prezentacja obrazu za pomocą pionowo-poziomej siatki odpowiednio kolorowanych pikseli), zapisujemy ją bez kompresji
+PSD-photoshop
+XCF-GIMP
+bmp-najstarszy format
+PNG-rastowy pormat plików 
+
+
+Kompresja stratna
+JPEG
+[[WebP]]
+JPG
+krita
