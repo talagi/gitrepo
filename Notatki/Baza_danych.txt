@@ -52,3 +52,25 @@ Date - data, np. w formacie IOS, np. 2015-01-16
 DateTime - data i czas
 
 
+
+C:\Windows\System32\sqlite3.exe
+
+cmd
+powershell
+sqlite3.exe szkola.db < szkola.sql
+sqlite3.exe szkola.db
+.tables
+.schema
+.quit
+
+
+
+
+
+
+
+
+
+
+
+
