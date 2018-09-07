@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:43:40+02:00
+
+====== CPP ======
+
+biblioteka standardowa <iostream>
+
+Podstawowe typy danych:
+char - przechowywanie pojedynczych znaków aski
+int- typ zmiennej jaką może przechowywać dana zmienna
+long int - liczby calowite z większym zakresem
+float, double- typy zmiennoprzecinkowe
+bool- typ logiczny (true albo false)
+

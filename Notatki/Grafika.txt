@@ -29,6 +29,6 @@ PNG-rastowy pormat plików
 
 Kompresja stratna
 JPEG
-[[WebP]]
+WebP
 JPG
 krita
