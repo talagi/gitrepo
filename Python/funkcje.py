@@ -3,8 +3,9 @@
 #
 #  szablon.py
 
-def dodaj():
-    print(a + b)
+#zasięg zmiennych: lokalny, globalny
+def dodaj(a, b):
+    return a + b
 
 def main(args):
     # a = 0 # inicjacja zmiennej
@@ -13,9 +14,7 @@ def main(args):
     b = int(input('Podaj 2. liczbę: '))
     print(b)
     
-    dodaj()
-    
-    print("Suma: ", a + b)
+    print("Suma: ", dodaj(a, b))
     print("Różnica: ", a - b)
     print("Iloczyn: ", a * b)
     print("Iloraz: ", a / b)
