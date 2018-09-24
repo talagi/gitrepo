@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:22:38+02:00
+
+====== Tabele ======
+sqlpedia
+
+Te same informacje przechowywane wiele razy w wielu wierszach zajmują niepotrzebie dużo zasobów.
+Kolumny tabeli nie powinny zawierać kolekcji różnych wartości.
+
+Normalizacja to bezstratny proces organizowania danych w tabelach mający na celu zmniejszenie ilości danych składowanych w bazie oraz wyeliminowanie potencjalnych anomalii. Normalizacja przebiega w trzech krokach:
+1NF, 2NF, 3NF.
+1NF - mówi o atomowości danych, czyli każde pole przechowuje jedną informacje, dzięki czemu możemy dokonywać efektywnych zapytań.
+2NF- mówi, że każda tabela powinna przechowywać dane dotyczące tylko konkretnej klasy obiektów.
+3NF - usunięcie niepotrzebnych kolumn
