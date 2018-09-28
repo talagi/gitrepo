@@ -6,7 +6,7 @@
 
 def main(args):
 	
-	for a in range(10, 101):
+	for a in range(10, 100):
 		if a %2 ==0 and a %3 == 0:
 			print (a)
 
