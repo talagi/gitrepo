@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-01T07:32:41+02:00
+
+====== DataTypes ======
+Created poniedziałek 01 października 2018
+
+NULL
+INTEGER
+REAL - liczby zmiennoprzecinkowe
+TEXT
+BLOB
+
+CHAR(20) - wypełnia puste pola
+VARCHAR(20) - nie wypełnia pustych pól
+KODOWANIE = UTF-8
+
+BOOLEAN (0 - FALSE, 1 - TRUE)

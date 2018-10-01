@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-01T07:13:51+02:00
+
+====== Więzy integralności ======
+Created poniedziałek 01 października 2018
+
+Constraints
+
+id INTEGER PRIMARY KEY AUTONUMERIC
+UNIQUE - unikalność wartości w kolumnie
+NOT NULL - nie dopuszczenie pustych wartości
+DEFAULT - wartość domyślna: "", 10%
+FOREGIN KEY - definicja klucza obcego
+nazwa_pola REFERENCES tabela(inne_pole)
+CHECK num1 > num2 - testowanie wartości
+
+ON DELETE CASCADE - razem z wierszem tabeli nadrzędnej zostają usunięte wszystkie wiersze tabeli podrzędnej, w których wartości klucza obcego wskazują na usuwany wiersz (pod warunkiem, że usunięcie tyvh wierszy jest możliwe bez naruszenia innych więzów referencyjnych)
+ON DELETE SER NULL/SET DEFAULT
