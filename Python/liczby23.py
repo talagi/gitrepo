@@ -30,10 +30,9 @@ def liczby3():
     for i in range(1, 10):
         for j in range(0, 10):
             for k in range(0, 10):
-                if i != j or j != k or k != i:
-                    print("{}{}{} ".format(i, j,k), end='')
+                if i != j and j != k and k != i:
+                    print("{}{}{} ".format(i, j, k), end='')
                     ile = ile + 1
-    print()
     return ile
 
 
