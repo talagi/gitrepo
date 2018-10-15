@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS Subscribtion;
 DROP TABLE IF EXISTS Orders;
 
 CREATE TABLE Customers (
-	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	customer_id INTEGER PRIMARY KEY AUTOINCREMENT,
 	name TEXT,
 	address TEXT
 );
@@ -18,7 +18,7 @@ CREATE TABLE Orders (
 );
 
 CREATE TABLE Subscribtion (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    subscription_id INTEGER PRIMARY KEY AUTOINCREMENT,
     description TEXT,
     price_per_month DECIMAL,
     subscription_length TEXT

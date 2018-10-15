@@ -64,7 +64,8 @@ sqlite3.exe szkola.db
 .quit
 
 
-
+LEFT JOIN
+IS (NOT) NULL
 
 
 
