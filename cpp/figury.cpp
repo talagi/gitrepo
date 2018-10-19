@@ -9,10 +9,10 @@
 using namespace std;
 
 void prostokat2(int x, int y, char znak) {
-    for (int i = 1; i <= x; i++) {
-        for (int j = 1; j <= y; j++) {
-            if (i != j) {
-                cout << i << j << " ";
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            if (i == 0 || j == y - 1 || i == 0 || i == x - 1) {
+                cout << znak; 
                 ile++;
             }
         }

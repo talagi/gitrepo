@@ -16,9 +16,8 @@ def sumuj_cyfry1(liczba):
     
 def sumuj_cyfry2(liczba):
     suma = 0
-    while liczba > 0:
-        suma += liczba % 10
-        liczba = int(liczba / 10)
+    for cyfra in str(liczba):
+        suma += int(cyfra)
     return suma
 
 
@@ -30,14 +29,9 @@ def main(args):
     while liczba < 10:
         liczba = input("Podaj liczbê 2-cyfrow¹: ")
         liczba = int(liczba)
-    
-    suma = 0 
-    while liczba > 0:
-        suma += liczba % 10
-        liczba = int(liczba / 10)
         
     
-    print("Suma: ", suma)
+    print("Suma: ", sumuj_cyfry2)
     return 0
 
 if __name__ == '__main__':
