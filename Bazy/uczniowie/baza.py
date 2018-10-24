@@ -78,10 +78,10 @@ def main(args):
                 dane2.append(r)
             dane = dane2
 
-    ile = len(dane[0])
+            ile = len(dane[0])
 
-    cur.executemany('INSERT INTO ' + tab +
-        ' VALUES(' + ','.join(['?'] * ile) + ')', dane)
+            cur.executemany('INSERT INTO ' + tab +
+                ' VALUES(' + ','.join(['?'] * ile) + ')', dane)
     con.commit()  # zatwierdzenie zmian w bazie
     con.close()  # zamknięcie połączenia z bazą
     return 0
