@@ -25,6 +25,13 @@ def dane_z_pliku(nazwa_pliku, separator=','):
             dane.append(rekord)  # dodawanie rekordów do listy
     return dane
 
+def ile_kolumn(cur, tab):
+    """Funkcja sprawdza i zwraca liczbę kolumn w tabeli"""
+    licznik = 0
+    for kol in cur.execute("PRAGMA table_info('" + tab + "')"):
+        licznik += 1
+    return licznik
+
 def kwerenda_1(cur):
     cur.execute("""
         SELECT * FROM magazyn
