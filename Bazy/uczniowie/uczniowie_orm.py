@@ -24,12 +24,21 @@ class Uczen(BazaModel):
     nazwisko = CharField(null=False)
     plec = BooleanField()
     klasa = ForeignKeyField(Klasa, related_name='uczniowie')
-    
-class Wynik(BazaModel):
     egz_hum = DecimalField(default=0) 
     egz_mat= DecimalField(default=0) 
     egz_jez = DecimalField(default=0) 
-    uczen = ForeignKeyField(Uczen, related_name='wyniki')
+    
+class Przedmiot(BazaModel):
+    przedmiot = CharField(null=False)
+    imie_naucz = CharField(null=False)
+    nazwisko_naucz = CharField(null=False)
+    plec_naucz = BooleanField()
+    
+class Ocena(BazaModel):
+    data = DateField()
+    uczen = ForeignKeyField(Uczen, related_name='oceny')
+    przedmiot = ForeignKeyField(Przedmiot, related_name='oceny')
+    ocena = IntegerField(default=0)
 
 
 
@@ -38,32 +47,20 @@ def main(args):
     if os.path.exists(baza_plik):
         os.remove(baza_plik)
     baza.connect()
-    baza.create_tables([Klasa, Uczen, Wynik])
+    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])
     
     kl1 = Klasa(nazwa='2A', roknaboru = 2012, rokmatury = 2015)
-    kl1.save()
-    kl1 = Klasa(nazwa='1A', roknaboru = 2011, rokmatury = 2014)
-    kl1.save()
-    kl1 = Klasa(nazwa='3A', roknaboru = 2010, rokmatury = 2013)
     kl1.save()
     
     kl2a = Klasa.select().where(Klasa.nazwa == '2A').get()
     u1 = Uczen(imie = 'Jan', nazwisko = 'Kowalski', plec = False, klasa = kl2a)
     u1.save()
-    kl3a = Klasa.select().where(Klasa.nazwa == '3A').get()
-    u1 = Uczen(imie = 'Kuba', nazwisko = 'Kowalski', plec = False, klasa = kl3a)
-    u1.save()
-    kl1a = Klasa.select().where(Klasa.nazwa == '1A').get()
-    u1 = Uczen(imie = 'Agnieszka', nazwisko = 'Talaga', plec = False, klasa = kl1a)
-    u1.save()
     
-    uczniowie = Uczen.select()
-    for uczen in uczniowie:
-        print(klasa.nazwa, klasa.roknaboru, klasa.rokmatury)
-        
-    klasy = Klasa.select()
-    for klasa in klasy:
-        print(uczen.id, uczen.imie, uczen.nazwisko)
+    p1 = Przedmiot(przedmiot = 'fizyka', imie_naucz = 'Kuba', nazwisko_naucz = 'Kowalski', plec_naucz = False)
+    p1.save()
+    
+    o1 = Ocena(data = '12-12-2015', uczen = u1, przedmiot = p1, ocena = 2)
+    o1.save()
     
     baza.close()
     return 0
