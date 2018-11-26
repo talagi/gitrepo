@@ -9,7 +9,7 @@ from peewee import *
 baza_plik = 'test_orm.db'
 
 ################# MODEL
-baza = SqliteDatabase()
+baza = SqliteDatabase(baza_plik)
 class BazaModel(Model):
     class Meta:
         database = baza
@@ -22,14 +22,14 @@ class Klasa(BazaModel):
 class Uczen(BazaModel):
     imie = CharField(null=False)
     nazwisko = CharField(null=False)
-    plec = BolleanField()
-    klasa = ForeginKeyField(Klasa, related_name='uczniowie')
+    plec = BooleanField()
+    klasa = ForeignKeyField(Klasa, related_name='uczniowie')
     
 class Wynik(BazaModel):
     egz_hum = DecimalField(default=0) 
     egz_mat= DecimalField(default=0) 
     egz_jez = DecimalField(default=0) 
-    uczen = ForeginKeyField(Uczen, related_name='wyniki')
+    uczen = ForeignKeyField(Uczen, related_name='wyniki')
 
 
 
@@ -37,7 +37,9 @@ class Wynik(BazaModel):
 def main(args):
     if os.path.exists(baza_plik):
         os.remove(baza_plik)
-    
+    baza.connect()
+    baza.create_tables([Klasa, Uczen, Wynik])
+    baza.close()
     return 0
 
 if __name__ == '__main__':
