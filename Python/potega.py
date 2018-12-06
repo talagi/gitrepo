@@ -7,20 +7,25 @@
 #  
 #  
 
-def potega_it(a,  n):
+def  potega_re(a, n):
+    if n == 0:
+        return 1
+    potega_re(a, n-1) * a
+
+def potega_it(a, n):
     wynik = 1
-    for i in range(n):
+    for i in range(n): 
         wynik = wynik * a
         # print(wynik)
     
-    return wynik
+    return wynik 
     
 
 
 def main(args):
-    a, n = 0, 2  # wielokrotne przypisanie
+    a, n = 3, 4  # wielokrotne przypisanie
     print("Podstawa {} do potęgi {} wynosi {}".
-           format(a, n, potega_it(a, n)))
+           format(a, n, potega_re(a, n)))
            
     return 0
 
