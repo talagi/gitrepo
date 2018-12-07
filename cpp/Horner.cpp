@@ -26,7 +26,21 @@ float horner_it(float x, int stopien, float tbwsp[]){
     }
     return wynik;
 }
+// horner_rek(2, 3, tbwsp);
+// horner_rek(2, 2, tbwsp) * 2 + 4;
+// horner_rek(2, 1, tbwsp) * 2 + 5;
+// horner_rek(2, 0, tbwsp) * 2 + 3;
+// 2 * 2 + 3 = 7
+// 7 * 2 + 5 = 19
+// 19 * 2 + 4 = 42
+// 42
 
+float horner_rek(float x, int st, float tbwsp[]){
+    if (st == 0) 
+        return tbwsp[0];
+    return x * horner_rek(x, st - 1, tbwsp) + tbwsp[st];
+    
+}
 
 int main(int argc, char **argv)
 {

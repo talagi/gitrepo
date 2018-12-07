@@ -22,6 +22,14 @@ long int fibonacci_it(int n) {
     return wynik;
 }
 
+
+long int fibonacci_rek(int n){
+    if (n == 0) return 0;
+    if (n ==1) return 1;
+    return fibonacci_rek(n - 1) + fibonacci_rek(n - 2);
+    
+}
+
 int main(int argc, char **argv)
 {
 	int n = 0;
@@ -29,7 +37,10 @@ int main(int argc, char **argv)
     cin >> n;
     cout << "Ciąg Fibonacciego do wyrazu " << n << ":" << endl;
     for (int i = 0; i <= n; i++){
-        cout << fibonacci_it(i) << endl;
+        //cout << fibonacci_it(i) << endl;
+        cout << fibonacci_rek(i) << endl;
+        if (i > 2)
+            cout << (float)fibonacci_it(i) / (float)fibonacci_it(i - 1) << endl;
     }
 	return 0;
 }

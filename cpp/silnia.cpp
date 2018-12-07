@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 {
 	int a;
     cout << "Podaj liczbę: ";
-    cin >> a;
+    cin >> a; 
     cout << "Silnia: " << silnia_it(a) << endl;
     cout << "Silnia: " << silnia_rek(a) << endl;
 	return 0;
