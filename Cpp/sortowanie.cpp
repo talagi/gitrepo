@@ -34,28 +34,68 @@ void zamien1(int &a, int &b) {
     
 }
 
-
+void zamien2(int tab[], int i) {
+    int tmp = tab[i];
+    tab[i] = tab[i+1];
+    tab[i+1] = tmp;
+    
+}
 
 void sort_bubble(int tab[], int n){
-    for(;;) {
-        for(;;) {
-            //if (tab[i] > tab[i + 1])
-                zamien1(tab[i], tab[i+1]);
+    for(int j = n - 1; j > 0; j--) {
+        for(int i = 0; i < j; i++) {
+            if (tab[i] > tab[i + 1])
+                //zamien1(tab[i], tab[i+1]);
+                zamien2(tab, i);
         }
     }
 }
 
+void sort_insert(int tab[], int n){
+    cout << "\nSortowanie przez wstawianie\n";
+    int i, j, tmp;
+    int licznik = 0;
+    for (i = 1; i < n; i++) {
+        tmp = tab[i];
+        j = i - 1;
+        licznik++;
+        while (j >= 0 && tab[j] > tmp){
+            tab[j+1] = tab[j];
+            j--;
+        }
+        tab[j+1] = tmp;
+    }
+    cout << "\nPowtórzeń: " << licznik << endl;
+}
+
+void sort_selection(int tab[], int n){
+    int i, k, j;
+    for (i = 0; i < n; i++){
+        k = i;  // indeks najmniejszego elementu
+        for(j = k + 1; j < n; j++){
+            if (tab[j] < tab[k])
+            k = j;
+        }
+        zamien1(tab[i], tab[k]);
+    }
+}
+
+
 int main(int argc, char **argv)
 {
-	int roz = 20;
-    int tab[roz];
-    wypelnij(tab, roz);
-    drukuj(tab, roz);
+	int n = 20;
+    int tab[n];
+    wypelnij(tab, n);
+    drukuj(tab, n);
+    //int a = 10;
+    //int b = 20;
+    //zamien1(a, b)
+    //cout << a << " " << b;
     cout << endl;
-    tab[0] = 0;
-    tab[1] = 8;
-    zamien1(tab[0], tab[1]);
-    cout << tab[0] << " " << tab[1];
+    sort_bubble(tab, n);
+    sort_insert(tab, n);
+    cout << endl;
+    drukuj (tab, n); 
 	return 0;
 }
 
