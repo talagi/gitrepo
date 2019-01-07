@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <!--
    index.html
 -->
 
 <head>
 <meta charset="utf-8" />
-    <title>Aplikacja Quiz!!</title>
+    <title>Aplikacja QUIZ</title>
 </head>
 
 <body>
-    <h1>Quiz - pytania</h1>
+    <h1>Quiz – pytania</h1>
+    
     <ol>
     {% for p in pytania %}
         <li>
-            {{p.pytanie}}
+            {{ p.pytanie }}
         </li>
     {% endfor %}
-     <p><a href="{{ url_for('hello')}}">Strona glówna</a></p>
     </ol>
+    
 </body>
 
 </html>
