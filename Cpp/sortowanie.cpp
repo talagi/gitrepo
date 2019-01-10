@@ -94,6 +94,7 @@ int main(int argc, char **argv)
     cout << endl;
     sort_bubble(tab, n);
     sort_insert(tab, n);
+    sort_selection(tab, n);
     cout << endl;
     drukuj (tab, n); 
 	return 0;
