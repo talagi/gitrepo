@@ -48,24 +48,31 @@ int szukaj_lin (int tab[], int n, int szuk){
 
 // dziel i zwyciężaj 
 int szukaj_bin_lin(int tab[], int n, int szuk){
-    int p, k, s;
-    p = 0; 
+    int p, k, s, w;
+    w = -1; 
     k = n -1;
     while (p <= k) {
         s = (p + k) / 2;
         if (tab[s] == szuk){
-            p = s;
-            break;
+            return s;
         } else if (szuk < tab[s]) k = s - 1;
         else p = s + 1;
     }
-    
-    if (p >= 0) 
-        cout << "Znaleziono: " << p << endl;
-    else 
-        cout << "Nie znaleziono: ";
     return p;
 }
+
+int szukaj_bin_rek(int tab[], int szuk, int p, int k){
+    if (p <= k) {
+        int s = (p + k) / 2;
+        if (tab[s] == szuk) return s;
+        if (szuk < tab[s]) 
+            return szukaj_bin_rek(tab, szuk, p, s-1);
+        else 
+            return szukaj_bin_rek(tab, szuk, s+1, k);
+    }
+    return -1;
+}
+
 
 int main(int argc, char **argv)
 {
@@ -77,11 +84,14 @@ int main(int argc, char **argv)
     cout << "Podaj liczbę: ";
     cin >> szuk;
     sort_insert(tab, n);
-    int indeks = szukaj_bin_lin(tab, n, szuk);
+    
+    //int indeks = szukaj_bin_lin(tab, n, szuk);
+    int indeks = szukaj_bin_rek(tab, szuk, 0, n-1);
     if (indeks >= 0) 
         cout << "Znaleziono: " << indeks << endl;
     else 
         cout << "Nie znaleziono: ";
+    
     //~int indeks = szukaj_lin(tab, n, szuk);
 	//~if (indeks != -1)
         //~cout << "Znaleziono!";
