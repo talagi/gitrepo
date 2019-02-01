@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   index.html
--->
-
-<head>
-<meta charset="utf-8" />
-    <title>Aplikacja QUIZ - rozwiąż quiz</title>
-</head>
-
-<body>
-    <h1>Quiz – odpowiedz na pytania</h1>
-    
-    <form method="POST">
+{% extends "szablon.html"%}
+{% block h1%}Aplikacja QUIZ - rozwiąż quiz{% endblock%}
+{% block tresc%}
+<form method="POST">
         <ol>
         {% for p in pytania %}
             <li>
@@ -28,9 +17,6 @@
             </li>
         {% endfor %}
         </ol>
-        
-        <input type="submit" value="Prześlij">
-    </form>
-</body>
 
-</html>
+        <input type="submit" value="Prześlij">
+    </form>{% endblock%}

@@ -7,8 +7,9 @@ from modele import *
 from views import *
 
 app.config.update(dict(
-    SECRET_KEY='bardzosekretnyklucz',
-    TITLE='Aplikazja Quiz',
+    # jak najbardzej losowy ciąg znaków 
+    SECRET_KEY = 'bardzosekretnyklucz',
+    TITLE = 'Aplikacja Quiz',
 ))
 
 @app.before_request

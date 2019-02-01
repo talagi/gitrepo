@@ -23,15 +23,21 @@ def quiz():
     
     if request.method == 'POST':
         wynik = 0
-        for pid, oid in request.form.items():
-            if Odpowiedz().get(Odpowiedz.id == int(oid)).odpok:
+        for p_id, o_id in request.form.items():
+            if Odpowiedz().get(Odpowiedz.id == int(o_id)).odpok:
                 wynik += 1
-                
+    
         flash('Poprawnych odpowiedzi: {}'.format(wynik), 'info')
         return redirect(url_for('hello'))
-    
+        
     pytania = Pytanie.select().join(Odpowiedz).distinct()
     return render_template('quiz.html', pytania=pytania)
+
+@app.route("/dodaj", methods = ['GET', 'POST'])
+def dodaj():
+    form = DodajForm()
+    
+    return render_template('dodaj.html', form=form)
 
 def main(args):
     return 0
