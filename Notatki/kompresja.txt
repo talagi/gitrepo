@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-02-07T07:34:55+01:00
+
+====== Kompresja ======
+Created czwartek 07 lutego 2019
+
+Zmniejszanie ilości danych, żeby informacje istotne zachować. Współczynnik kompresji:
+Rc= Vk/Vn * 100% - o ile zmniejszyły się dane
+R'c=(1-Vk/Vnk) * 100% - ile miejsca zaoszczędzono
+
+Rc=74171 / 117760 * 100% = 62%
+R'c = 37%
+
+115kB=115 * 1024 = 117760
+
+8 bitów = 1 Bajt
+1kB = 1024 Bajty
+1MB = 1024 kB
+1GB = 1024 MB
+1TB = 1024 GB
+
+Algorytmy slownikowe
+
+The rain in Spain falls mainly on the plain.
+The rain <3,3>Sp<9,4>falls m<11,3>ly on t<34,3>pl<15,3>.
