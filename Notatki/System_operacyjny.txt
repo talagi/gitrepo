@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-07T07:25:28+01:00
+
+====== System operacyjny ======
+Created czwartek 07 marca 2019
+
+Partycja główna
+Partycja rozszerzona
+tablica typu Fat - partycje logiczne 
+GPT - nie ma podziału, tworzymy ile chcemy
+MBR- sektory w których zapisana jest z informacja z której partycji trzeba uruchamiać komputer
+Partycja ROOT /
+Formatowanie
+Montowanie - dołączenie zasobu dyskowego do systemu plików
+Linux- jako jądro systemu operacyhnego
+Linux - jako system operacyjny
+Liczy się idea Oppen Source
+Nakładka graficzna
+Bootlowder - odpowiada za rozruch systemu
+powłoka w Windowsie Command Cmd
+		w Microsofcie PowerShell
+		w Linux Bash
+Grupy systemowe - grupy pozwalajace użytkownikowe na dane działania
+toolchain -  zestaw podstawowego oprogramowania do tworzenia oprogramowania
+dystrybucja ciągła - arch
+DOS- system jednozadaniowy, wystarczy znać jego polecenia, brak konta użytkownika
+menager pamięci wirtualny - izoluje programy od pamięci sprzętowej
+planista - przydziela czas procesora 
+wielozadaniowość

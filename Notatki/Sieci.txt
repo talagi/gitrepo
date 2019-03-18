@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-15T13:52:50+01:00
+
+====== Sieci ======
+Created piątek 15 marca 2019
+
+skrętka + RJ45 - interfejs sieciowy
+Ethernet
+przepustowość - 100 Mb/s - to maksymalna prędkość
+prędkość - nie jest wartością stałą, jest zmienna
+adres IPv4 - numer który identyfikuje komputer, v4 składa się z 4 cyfr
+	192.168.x.x
+	10.x.x.x
+	172.16.x.x
+LAN -local area network( kompuert - desktop, laptop(ethernet, wifi), smartphony, drukarki)
+SWITH - przełącznik - interfejsy wewnętrzne
+ROUTER - ma swith i router - interfejs wewnetrzny i zewnetrzny (DSL, WAN) - łączy sieci
+routing - trasowanie, wyznaczanie drogi do swerwera o publicznym IP
+
