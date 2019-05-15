@@ -17,4 +17,13 @@ LAN -local area network( kompuert - desktop, laptop(ethernet, wifi), smartphony,
 SWITH - przełącznik - interfejsy wewnętrzne
 ROUTER - ma swith i router - interfejs wewnetrzny i zewnetrzny (DSL, WAN) - łączy sieci
 routing - trasowanie, wyznaczanie drogi do swerwera o publicznym IP
+protokół sieciowy - zestaw reguł które odpowiadają za komunikację - język komunikacji
+tunelowanie
+HTTP:
+HTTPS:
+dowolna liczba serwerów HTTP ma jednej maszynie
+port 1-1024
+FTP - DATA 20/tcp
+FTP 21/tcp
+FTP ma wersję bezpieczną SFTP
 
