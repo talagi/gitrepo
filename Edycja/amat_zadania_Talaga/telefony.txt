@@ -1,0 +1,17 @@
+Kowalski Jan 23-45-67 2 7 0
+Nowak Zenon 34-20-53 3 3 1
+Jankowski Jan 45-00-14 4 4 1
+Twardowski Jan 34-98-56 3 6 0
+Maciejewski Maciej 40-47-53 4 3 0
+Kowalski Jan 23-45-67 2 7 0
+Nowak Zenon 34-20-53 3 3 1
+Jankowski Jan 45-00-14 4 4 1
+Twardowski Jan 34-98-56 3 6 0
+Maciejewski Maciej 40-47-53 4 3 0
+Kowalski Jan 23-45-67 2 7 0
+Nowak Zenon 34-20-53 3 3 1
+Jankowski Jan 45-00-14 4 4 1
+Twardowski Jan 34-98-56 3 6 0
+Maciejewski Maciej 40-47-53 4 3 0
+     
+    Liczba: 6
