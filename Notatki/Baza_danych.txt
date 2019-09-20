@@ -67,8 +67,32 @@ sqlite3.exe szkola.db
 LEFT JOIN
 IS (NOT) NULL
 
+Anomalia baz danych:
+-redundacja
+- anomalia modyfikacji
+-anomalia usuwania
+-anomalia dodawania
 
+Normalizacja baz danych
+-atomowość informacji
+-podział danych na tabele
 
+arkusz kalkulacyjny-przypadtne polecenia
+dane/tekst jako kolumny
+
+funkcje tekstowe w arkuszu
+DŁ 
+FRAGMENT.TEKSTU
+LEWY
+PRAWY
+
+Filtry
+dane/więcej filtrów/ filtr standardowy
+dane/sortuj
+
+funkcje arkusza
+SZUKAJ.TEKST
+PODAJ.POZYCJE
 
 
 
